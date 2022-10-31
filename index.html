@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>To-do List</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">To-do List</h1>
+      <form class="form_search">
+        <input class="form" type="text" name="search" placeholder="Buscar to-do" autocomplete="off" />
+      </form>
+    </header>
+
+    <ul class="todos_container">
+      <!-- CAMPO USADO PARA TESTES FUTUROS -->
+      <!-- <li class="list_item" data-todo = "Tarefa Teste 1">
+        <span>Tarefa Teste 1</span>
+        <i  class="far fa-trash-alt" data-trash="Tarefa Teste 1"></i>
+      </li>
+
+      <li class="list_item" data-todo = "Tarefa Teste 2">
+        <span>Tarefa Teste 2</span>
+        <i  class="far fa-trash-alt" data-trash="Tarefa Teste 2"></i>
+      </li>
+
+      <li class="list_item" data-todo = "Tarefa Teste 3">
+        <span>Tarefa Teste 3</span>
+        <i  class="far fa-trash-alt" data-trash="Tarefa Teste 3"></i>
+      </li> -->
+    </ul>
+
+    <form class="add_todo">
+      <label class="title_add">Adicionar Tarefa</label>
+      <input class="input_add" type="text" name="add" autofocus autocomplete="off" />
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

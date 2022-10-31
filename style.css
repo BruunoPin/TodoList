@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/stacked-steps-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container,
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  z-index: 99
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+.form_search input,
+.input_add {
+  padding: 10px;
+  width: 400px;
+  border-radius: 2px;
+  border: none;
+  outline-color: #d2f4f3;
+}
+
+.form_search {
+  margin-bottom: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 15px;
+  background-color: #cecfed;
+  margin-bottom: 0.8px;
+}
+
+li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+i[data-trash] {
+  cursor: pointer;
+}
+
+.title_add {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.add_todo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
